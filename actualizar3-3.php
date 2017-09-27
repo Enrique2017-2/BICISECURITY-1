@@ -14,7 +14,7 @@ if (($nombre_img == !NULL) and ($tamano<= 200000))
    || ($tipo == "image/png"))
    {
       // Ruta donde se guardarán las imágenes que subamos
-      $directorio = $_SERVER['DOCUMENT_ROOT'].'/AVANZADO/BICISECURITY/imagenes/';
+      $directorio = $_SERVER['DOCUMENT_ROOT'].'/BICISECURITY/imagenes/';
       // Muevo la imagen desde el directorio temporal a nuestra ruta indicada anteriormente
       move_uploaded_file($_FILES['rostro']['tmp_name'],$directorio.$nombre_img);
     } 
